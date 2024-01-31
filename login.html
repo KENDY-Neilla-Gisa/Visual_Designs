@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Screen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&family=Roboto+Condensed:wght@500&family=Rubik+Lines&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="Images/Circle illustrate.png" class="cicle">
+            <img src="Images/Notification icons.png" class="notification">
+        </div>
+    <div class="login-container">
+    <h2>Welcome back!</h2>
+    <p>Sign in to get started</p>
+    
+        <form action="/login" method="post">
+            <input type="email" placeholder="Enter your email address" required>
+            <input type="password" placeholder="Enter your password" required>
+    
+            <a href="#" class="">Forgot Password</a>
+    
+            <button type="submit" onclick="redirecttoDashboard()">Log in</button>
+            
+            <p onclick="redirecttoRegister()">Create a new account</p>
+        </form>
+    </div>
+    </div>
+
+    <script>
+        function redirecttoRegister() {
+            window.location.href = "index.html";
+        }
+        function redirecttoDashboard() {
+            window.location.href = "dashboard.html"
+        }
+    </script>
+
+</body>
+</html>

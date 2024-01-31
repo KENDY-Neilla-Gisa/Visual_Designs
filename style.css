@@ -1,0 +1,397 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0; 
+}
+
+.register-screen {
+    max-width: 400px;
+    margin: auto;
+    margin: 216px 0 0 0;
+}
+
+.register-screen h2, .register-screen p {
+    text-align: center;
+}
+
+.register-screen h2{
+    font-weight: 600;
+    font-size: 20px;
+}
+.register-screen p{
+    font-weight: 300;
+    font-size: 16px;
+}
+.paragraph-under{
+    margin-top: -20px;
+}
+
+.register-screen input[type=text],
+.register-screen input[type=email],
+.register-screen input[type=password] {
+    width: calc(90% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-left: 16px;
+    margin-right: 24px;
+}
+
+.register-screen button {
+   width: calc(90% - 5px);
+   padding: 10px;
+   background-color: grey; 
+   margin-top: 20px;
+   margin-left: 19px;
+   margin-right: 20px;
+}
+
+.header{
+    position: relative;
+}
+.header img{
+    position: absolute;
+    z-index: 1;
+}
+.header img:nth-child(2){
+    z-index: 2;
+}
+
+.notification{
+    width: 325px;
+    height: 21px;
+    top: 10px;
+    left: 25px;
+}
+
+.container{
+    width: 375px;
+    height: 800px;
+    background-color: #c1c3c3;
+}
+
+form{
+    margin: 45px 0 0 0;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    width: 325px;
+    height: 36px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+form button {
+    width: 325px;
+    height: 65px;
+    padding: 10px;
+    color: #000;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+}
+p.link{
+    font-size: 20px;
+    text-decoration: underline;
+    font-weight: 300;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+/*-----splash-----*/
+
+.splash-screen h1 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 514px 0 0 0;
+    text-align: center;
+    margin-top: -7px;
+    margin-bottom: 120px;
+    margin-left: 83px;
+    margin-right: 86px;
+}
+
+.splash-screen button {
+    width: 325px;
+    height: 65px;
+    background-color: #838686;
+    color: #000;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 0px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.splash-screen img{
+    margin-top: 299px;
+    margin-bottom: 0;
+    margin-left: 97px;
+    margin-right: 98.26px;
+}
+
+/*------login-----*/
+.login-container {
+    position: relative;
+    max-width: 400px;
+    padding: 20px;
+    margin: 185px 0 0 0;
+}
+
+.login-container h2, .login-container p {
+    text-align: center;
+}
+  
+.login-container h2 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+.login-container p {
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 72px;
+    cursor: pointer;
+}
+  
+input[type=email], input[type=password] {
+    width: calc(90% - 20px);
+    padding:10px; 
+    margin-bottom :10px; 
+    margin-left: -5px;
+}
+  
+button {
+    width : calc(90% - 5px); 
+    padding :10px; 
+    background-color : grey; 
+    color:white; 
+    margin-top: 50px;
+}
+
+.login-container form a{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 5px;
+    margin-bottom: 0;
+    margin-left: 18px;
+    margin-right: 73px;
+    color: #000;
+    text-decoration: none;
+}
+
+.login-container form p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 30px;
+}
+
+/*-----dashboard-----*/
+.arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(190%);
+    left: 15px;
+    cursor: pointer;
+}
+.profile-rectangle{
+    width: 375px;
+    height: 251px;
+    background: #d9d9d9;
+}
+.profile-rectangle p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+.profile{
+    margin-top: 89px;
+    margin-bottom: 0;
+    margin-left: 138px;
+    margin-right: 137px;
+}
+.task-list h2{
+    margin-top: 40px;
+    margin-bottom: 12px;
+    margin-left: 12px;
+    margin-right: 120px;
+    font-weight: 600;
+}
+
+.task-list-rectangle{
+    background-color: #d9d9d9;
+    border-radius: 32px;
+    width: 350px;
+    height: 430px;
+    box-shadow: 0px 9px 10px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 23px;
+    margin-left: 12px;
+    margin-right: 13px;
+    position: relative;
+}
+.plus{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-780%);
+    right: 25px;
+    cursor: pointer;
+}
+
+.task-list input{
+    padding: 0 20px;
+    background-color: #f0f0f0;
+    border-radius: 30px;
+    width: 250px;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    border: none;
+    outline: none;
+    margin-left: 13px;
+    margin-right: 0;
+    font-size: 16px;
+    font-weight: 300;
+    position: absolute; 
+    top: 13px; 
+    box-sizing: border-box;
+}
+.task-list p.p-one{
+    width: 300px;
+    height: 36px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 300;
+    position: absolute;
+    top: 80px;
+    text-align: center;
+    margin-left: 14px;
+    margin-right: 10px;
+}
+.task-list p.p-two{
+    width: 300px;
+    height: 36px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 300;
+    position: absolute;
+    top: 150px;
+    text-align: center;
+    margin-left: 14px;
+    margin-right: 10px;
+}
+.task-list p.p-three{
+    width: 300px;
+    height: 36px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 300;
+    position: absolute;
+    top: 220px;
+    text-align: center;
+    margin-left: 14px;
+    margin-right: 10px;
+}
+.task-list p.p-four{
+    width: 300px;
+    height: 36px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 300;
+    position: absolute;
+    top: 290px;
+    text-align: center;
+    text-decoration: line-through;
+    margin-left: 14px;
+    margin-right: 10px;
+}
+.task completed-task.fa-solid fa-circle-check{
+    margin-left: 43px;
+    align-items: left;
+}
+
+/*----- new task -----*/
+.new-task-rectangle{
+    background-color: #d9d9d9;
+    border-radius: 32px;
+    width: 350px;
+    height: 201px;
+    box-shadow: 0px 9px 10px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 110px;
+    margin-left: 12px;
+    margin-right: 13px;
+    position: relative;
+}
+.new-task-radii input{
+    padding: 0 20px;
+    background-color: #f0f0f0;
+    border-radius: 30px;
+    width: 280px;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    border: none;
+    outline: none;
+    margin-left: 13px;
+    margin-right: 13px;
+    font-size: 16px;
+    font-weight: 300;
+    position: absolute;
+    top: 13px;
+}
+.status-icons img{
+    margin-left: 30px;
+    position: absolute;
+    top: 74px;
+    cursor: pointer;
+}
+.task-container button {
+    width: 273px;
+    height: 54.6px;
+    padding: 10px;
+    background-color: grey; 
+    color: #000;
+    margin-top: 139px;
+    margin-left: 40px;
+    margin-right: 62px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+ }

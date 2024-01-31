@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register Screen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&family=Roboto+Condensed:wght@500&family=Rubik+Lines&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="Images/Circle illustrate.png" class="cicle">
+            <img src="Images/Notification icons.png" class="notification">
+            <img src="Images/arrow-left.png" class="arrow" onclick="redirecttoDashboard()">
+        </div>
+        <div class="profile-rectangle"></div>
+    <div class="new-task-rectangle">
+        <div class="new-task-radii">
+            <input type="text" placeholder="Add new task" />
+        </div>
+
+    <div class="status-icons">
+        <img src="Images/group icons.png" onclick="redirecttoTask()">
+    </div>
+    <div class="task-container">
+        <button onclick="redirecttoDashboard()">Add task</button>
+    </div>
+    </div>
+</div>
+<script>
+function redirecttoDashboard() {
+    window.location.href = "dashboard.html"
+}
+function redirecttoTask() {
+    window.location.href = "task.html"
+}
+</script>
+</body>
+</html>
