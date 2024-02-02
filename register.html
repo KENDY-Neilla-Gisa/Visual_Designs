@@ -16,12 +16,12 @@
 <div class="register-screen">
     <h2>Create a new account</h2>
     <p class="paragraph-under">Let's get you setup</p>
-    <form action="/register" method="post">
-        <input type="text" placeholder="Enter your name" required>
-        <input type="email" placeholder="Enter your email address" required>
-        <input type="password" placeholder="Enter your password" required>
-        <input type="password" placeholder="Confirm password" required>
-        <button type="submit">Register</button>
+    <form action="dashboard.html">
+        <input type="text" placeholder="Enter your name">
+        <input type="email" placeholder="Enter your email address">
+        <input type="password" placeholder="Enter your password">
+        <input type="password" placeholder="Confirm password">
+        <button type="submit" onclick="redirecttoDashboard()">Register</button>
     </form>
     <p class="link" onclick="redirecttoLogin()">I already have an account.</p>
 </div>
@@ -30,6 +30,9 @@
     <script>
         function redirecttoLogin() {
             window.location.href = "login.html";
+        }
+        function redirecttoDashboard() {
+            window.location.href = "dashboard.html"
         }
     </script>
 
