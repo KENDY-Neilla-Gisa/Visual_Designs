@@ -17,18 +17,20 @@
         </div>
         <div class="profile-rectangle"></div>
         <div class="new-task-rectangle">
+            <form action="create.php" method="post">
             <div class="new-task-radii">
-                <input type="text" id="task-name-input" placeholder="Add new task" />
+                <input type="text" name="task_name" id="task-name-input" placeholder="Add new task" />
             </div>
             
             <div class="status-icons">
                 <img src="Images/group icons.png" onclick="redirecttoTask()">
             </div>
             <div class="task-container">
-                <button onclick="redirecttoDashboard()">Add task</button>
+                <button type="submit" name="submit">Add task</button>
             </div>
+            </form>
         </div>
-</div>
+    </div>
 <script>
 function redirecttoDashboard() {
     window.location.href = "dashboard.html"
