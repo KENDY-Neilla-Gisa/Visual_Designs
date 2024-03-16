@@ -4,6 +4,7 @@
 html, body {
     height: 100%;
     margin: 0;
+
 }
 
 body {
@@ -11,6 +12,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #f0f0f0; 
+    position: relative;
 }
 
 .register-screen {
@@ -241,7 +243,7 @@ button {
     font-weight: 600;
 }
 
-.task-list-rectangle{
+.task-list-container{
     background-color: #d9d9d9;
     border-radius: 32px;
     width: 350px;

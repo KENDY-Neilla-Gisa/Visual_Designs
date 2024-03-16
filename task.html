@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Register Screen</title>
+    <title>Add New Task</title>
     <link rel="shortcut icon" type="x-icon" href="Images/visualdesigns-favicon-color.png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,18 +16,18 @@
             <img src="Images/arrow-left.png" class="arrow" onclick="redirecttoDashboard()">
         </div>
         <div class="profile-rectangle"></div>
-    <div class="new-task-rectangle">
-        <div class="new-task-radii">
-            <input type="text" placeholder="Add new task" />
+        <div class="new-task-rectangle">
+            <div class="new-task-radii">
+                <input type="text" id="task-name-input" placeholder="Add new task" />
+            </div>
+            
+            <div class="status-icons">
+                <img src="Images/group icons.png" onclick="redirecttoTask()">
+            </div>
+            <div class="task-container">
+                <button onclick="redirecttoDashboard()">Add task</button>
+            </div>
         </div>
-
-    <div class="status-icons">
-        <img src="Images/group icons.png" onclick="redirecttoTask()">
-    </div>
-    <div class="task-container">
-        <button onclick="redirecttoDashboard()">Add task</button>
-    </div>
-    </div>
 </div>
 <script>
 function redirecttoDashboard() {
