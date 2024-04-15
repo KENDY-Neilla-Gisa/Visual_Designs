@@ -1,6 +1,6 @@
 <?php
 // Include database connection
-include 'connection.php';
+include 'add_task.php';
 
 // SQL query to select tasks from the new_task table
 $sql = 'SELECT * FROM new_task';

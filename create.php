@@ -1,6 +1,6 @@
 <?php
 // Include database connection
-include 'connection.php';
+include 'add_task.php';
 
 // Check if the form is submitted
 if (isset($_POST['submit'])) {
