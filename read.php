@@ -18,7 +18,7 @@ if ($result->num_rows > 0) {
         echo "-----------------------<br>";
     }
 } else {
-    // If no tasks found
+    // If no tasks found then
     echo "No tasks found.";
 }
 
